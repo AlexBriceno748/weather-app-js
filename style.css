@@ -1,0 +1,103 @@
+body {
+  background: #8c52ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#weather-container {
+  background: rgba(255, 255, 255, 0.2);
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  background: #debff4;
+  color: #512da8;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #fff;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: none; /* Keeps it hidden until you click Search */
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); /* Makes the icon pop! */
+}
+
+#temp-div p {
+  font-size: 64px;
+  color: white;
+  margin: 10px 0;
+}
+
+#weather-info p {
+  color: white;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+#hourly-forecast {
+  margin-top: 30px;
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.hourly-item {
+  flex: 0 0 auto;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.hourly-item img {
+  width: 40px;
+  height: 40px;
+}
